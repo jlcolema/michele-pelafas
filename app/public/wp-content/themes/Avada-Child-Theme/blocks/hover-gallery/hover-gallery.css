@@ -1,0 +1,209 @@
+.hoverGallery-block {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  margin: 45px 0 40px;
+}
+@media (max-width:800px) {
+  .hoverGallery-block {
+    flex-direction: column;
+  }
+}
+
+span.prevArrow:before,
+span.nextArrow:before {
+  content: '';
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+IDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjM1NCAxLjY0NmEuNS41IDAgMCAxIDAgLjcwOEw1LjcwNyA4bDUuNjQ3IDUuNjQ2YS41LjUgMCAwIDEtLjcwOC43MDhsLTYtNmEuNS41IDAgMCAxIDAtLjcwOGw2LTZhLjUuNSAwIDAgMSAuNzA4IDB6IiBmaWxsPSIjZmZmIj48L3BhdGg+IDwvc3ZnPg==) no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 40px;
+  width: 40px;
+  opacity: 1;
+  position: absolute;
+  left: -5px;
+  top: 175px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+span.nextArrow:before {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiNmZmYiICB2aWV3Qm94PSIwIDAgMTYgMTYiPiA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjY0NiAxLjY0NmEuNS41IDAgMCAxIC43MDggMGw2IDZhLjUuNSAwIDAgMSAwIC43MDhsLTYgNmEuNS41IDAgMCAxLS43MDgtLjcwOEwxMC4yOTMgOCA0LjY0NiAyLjM1NGEuNS41IDAgMCAxIDAtLjcwOHoiIGZpbGw9IiNmZmYiPjwvcGF0aD4gPC9zdmc+) no-repeat;
+  left: unset;
+  right: 5px;
+}
+
+
+.galleryMain-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;  
+  position: relative;
+}
+@media (max-width:800px) {
+  .galleryMain-container {
+    width: 100%;
+  }
+}
+
+.galleryContent-item {
+  display: none;
+  flex-direction: column;
+  z-index: 5;
+  position: relative;
+}
+.galleryContent-item.active {
+  display: flex;
+}
+
+.galleryMain-image {
+  height: 380px;
+}
+
+.galleryMain-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hoverGallery-block h3.galleryMain-title {
+  font-size: 32px;
+  font-weight: 300;
+  color: #cba666;
+  line-height: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.galleryMain-link {
+  margin-top: 20px;
+}
+
+.galleryMain-link a {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.galleryThumbs-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 40px;
+  height: fit-content;
+}
+@media (max-width:800px) {
+  .galleryThumbs-container {
+    width: 100%;
+    gap: 13px;
+  }
+}
+@media (max-width:600px) {
+  .galleryThumbs-container {
+    display: none;
+  }
+}
+
+.galleryThumb-item {
+  position: relative;
+  width: 46%;
+}
+@media (max-width:1145px) {
+  .galleryThumb-item {
+    width: 45%;
+  }
+}
+@media (max-width:950px) {
+  .galleryThumb-item {
+    width: 44%;
+  }
+}
+@media (max-width:800px) {
+  .galleryThumb-item {
+    width: 32%;
+  }
+}
+@media (max-width:750px) {
+  .galleryThumb-item {
+    width: 48%;
+  }
+}
+@media (max-width:361px) {
+  .galleryThumb-item {
+    width: 47%;
+  }
+}
+
+.galleryThumb-image {
+  height: 175px;
+}
+@media (max-width:400px) {
+  .galleryThumb-image {
+    height: 125px;
+  }
+}
+
+.galleryThumb-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hoverGallery-block .thumb-title {
+  position: absolute;
+  top: 10px;
+  left: 3%;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  z-index: 2;
+  text-transform: uppercase;
+}
+@media (max-width:750px) {
+  .hoverGallery-block .thumb-title {
+    line-height: 24px;
+    left: 7px;
+  }
+}
+@media (max-width:400px) {
+  .hoverGallery-block .thumb-title {
+    font-size: 12px;
+    line-height: 15px;
+    left: 5px;
+  }
+}
+
+.hoverGallery-block .thumbOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 65%);
+  z-index: 1;
+}
+
+.active .thumbOverlay {
+  background: #333333B2;
+}
+
+.galleryPagination {
+  position: absolute;
+  top: 360px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+  z-index: 10;
+}
+
+span.galleryPageIcon {
+  height: 10px;
+  width: 10px;
+  display: block;
+  background: #fff;
+}
+
+span.galleryPageIcon.active {
+  background: #cba666;
+}

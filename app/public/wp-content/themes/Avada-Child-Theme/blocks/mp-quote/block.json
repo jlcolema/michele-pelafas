@@ -1,0 +1,14 @@
+{
+  "name": "acf/mp-quote",
+  "title": "MP Quote",
+  "description": "A custom quote block.",
+  "style": [ "file:./mp-quote.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["quote"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "mp-quote.php"
+  },
+  "align": "full"
+}

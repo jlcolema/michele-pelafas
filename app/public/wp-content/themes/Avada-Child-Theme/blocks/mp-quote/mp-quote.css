@@ -1,0 +1,71 @@
+.mpQuote-block {
+  padding: 70px 0 50px;
+}
+@media (max-width: 1024px) {
+  .mpQuote-block {
+    padding: 40px 0 20px;
+  }
+}
+
+.mpQuote-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mpQuote-text {
+  font-size: 42px;
+  line-height: 55px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  .mpQuote-text {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
+
+.blog-quote .mpQuote-text {
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 16px;
+}
+
+.quote-55-60 .mpQuote-text {
+  font-size: 36px;
+  line-height: 42px;
+  padding-bottom: 20px;
+}
+
+.postClosing h2.mpQuote-text {
+  font-size: 55px;
+  line-height: 60px;
+}
+
+.mpQuote-author {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 12px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+.category .mpQuote-block {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .blogContent .mpQuote-block {
+    width: 92%;
+    margin: 0 auto;
+  }
+
+  .postClosing h2.mpQuote-text {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}

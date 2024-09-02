@@ -1,0 +1,14 @@
+{
+  "name": "acf/hover-card",
+  "title": "Hover Card",
+  "description": "A custom hover card block.",
+  "style": [ "file:./hover-card.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["hover", "card", "hover card"],
+  "acf": {
+      "mode": "preview",
+      "renderTemplate": "hover-card.php"
+  },
+  "align": "full"
+}

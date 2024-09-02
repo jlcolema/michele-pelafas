@@ -1,0 +1,79 @@
+.video-modal-block {
+  height: 450px;
+}
+
+.video-preview-image {
+  height: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-preview-text:before {
+  content: "";
+  background: url('/images/play-button.png');
+  width: 109px;
+  height: 109px;
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  margin: auto;
+}
+
+.video-preview-text {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.video-modal {
+  display: none;
+}
+
+.video-modal.open {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+  width: 90%;
+  max-width: 900px;
+  z-index: 12;
+}
+
+.video-modal-close {
+  top: -35px !important;
+}
+
+.video-modal iframe {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #000;
+}
+
+.video-overlay.open {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #0b0b0b;
+  position: absolute;
+  z-index: 11;
+  opacity: .6;
+}

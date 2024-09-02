@@ -1,0 +1,97 @@
+.slides-container {
+  height: 600px;
+  width: 100%;
+}
+
+.slide-container {
+  min-height: 600px !important;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 780px){
+  .slide-container {
+    min-height: 600px;
+  }
+}
+
+.slide-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+@media (max-width: 1230px){
+  .slide-inner {
+    padding: 60px 30px;
+  }
+}
+
+.slide-heading,
+.slide-subheading {
+  color: #fff;
+}
+
+.slide-heading.heading-lg {
+  margin: 0 0 15px !important
+}
+
+.carousel-block .slick-prev {
+  left: 40px;
+  z-index: 100;
+}
+
+.carousel-block .slick-next {
+  right: 60px;
+  z-index: 100;
+}
+
+.carousel-block .slick-prev:before {
+  content: '';
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM2NjY2NjYiIHZpZXdCb3g9IjAgMCAxNiAxNiI+IDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjM1NCAxLjY0NmEuNS41IDAgMCAxIDAgLjcwOEw1LjcwNyA4bDUuNjQ3IDUuNjQ2YS41LjUgMCAwIDEtLjcwOC43MDhsLTYtNmEuNS41IDAgMCAxIDAtLjcwOGw2LTZhLjUuNSAwIDAgMSAuNzA4IDB6IiBmaWxsPSIjRkZGIj48L3BhdGg+IDwvc3ZnPg==) no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+  position: relative;
+  left: -15px;
+}
+
+.carousel-block .slick-next:before {
+  content: '';
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9IiM2NjY2NjYiICB2aWV3Qm94PSIwIDAgMTYgMTYiPiA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjY0NiAxLjY0NmEuNS41IDAgMCAxIC43MDggMGw2IDZhLjUuNSAwIDAgMSAwIC43MDhsLTYgNmEuNS41IDAgMCAxLS43MDgtLjcwOEwxMC4yOTMgOCA0LjY0NiAyLjM1NGEuNS41IDAgMCAxIDAtLjcwOHoiIGZpbGw9IiNGRkYiPjwvcGF0aD4gPC9zdmc+) no-repeat;
+  background-size: 100%;
+  display: block;
+  height: 60px;
+  width: 60px;
+  opacity: 1;
+}
+
+.slick-initialized .slick-slide {
+  position: relative;
+}
+
+.slide-overlay {
+  background: rgba(0, 0, 0, .6);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.slide-container.slick-slide.slick-current.slick-active.slick-center .slide-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 60%,rgba(0, 0, 0, 0.5) 100%);
+  z-index: unset;
+  transition-property: color,background-color,border-color;
+  transition-duration: .2s;
+  transition-timing-function: linear;
+}
+
+.slide-subheading.threeSlides {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  z-index: 1;
+}

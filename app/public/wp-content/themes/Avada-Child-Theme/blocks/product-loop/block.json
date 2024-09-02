@@ -1,0 +1,15 @@
+{
+  "name": "acf/product-loop",
+  "title": "Product Loop Category",
+  "description": "A custom Product Loop by Category block.",
+  "style": [ "file:./product-loop.css" ],
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["product", "loop", "product loop"],
+  "acf": {
+      "mode": "edit",
+      "renderTemplate": "product-loop.php"
+  },
+  "align": "full"
+}
+

@@ -1,0 +1,15 @@
+{
+  "name": "acf/post-slider",
+  "title": "Post Slider",
+  "description": "A custom post slider block.",
+  "style": [ "file:./post-slider.css" ],
+  "script": "post-slider",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["post", "slider", "post slider"],
+  "acf": {
+      "mode": "edit",
+      "renderTemplate": "post-slider.php"
+  },
+  "align": "full"
+}
